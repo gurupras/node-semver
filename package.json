@@ -5,11 +5,14 @@
   "main": "semver.js",
   "scripts": {
     "test": "tap test/*.js --cov -J",
-    "posttest": "standard bin/semver *.js **/*.js"
+    "posttest": "standard bin/semver *.js **/*.js",
+    "build": "webpack"
   },
   "devDependencies": {
     "standard": "^12.0.1",
-    "tap": "^12.0.1"
+    "tap": "^12.0.1",
+    "webpack": "^4.29.3",
+    "webpack-cli": "^3.2.3"
   },
   "license": "ISC",
   "repository": "https://github.com/npm/node-semver",
